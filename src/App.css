@@ -30,3 +30,37 @@ body {
 .counter button:hover {
   background: #FF7D33;
 }
+
+.filter-list {
+  margin: auto;
+  margin-top: 30px;
+  width: 300px;
+  background: #3498db;
+  border-radius: 5px;
+  border: 1px solid black;
+}
+input {
+  width: 93%;
+  display: block;
+  padding: 10px;
+  border-radius: 5px 5px 0px 0px;
+  border: 0;
+  font-size: 24px;
+}
+input &:focus {
+    outline: none;
+}
+ul {
+  margin: 0;
+  padding: 0;
+}
+ul li {
+  list-style-type: none;
+  margin: 0;
+  color: white;
+  padding: 10px 20px;
+  border-top: 1px solid black;
+}
+ul li&:hover {
+  background: #2980b9;
+}
