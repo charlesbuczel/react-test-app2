@@ -20,11 +20,9 @@ class FilteredList extends React.Component {
       initialItems: items,
       items: items
     }
-
-    this.filterList = this.filterList.bind(this);
   }
 
-  filterList(event) {
+  filterList = (event) => {
     let updatedList = this.state.initialItems;
     updatedList = updatedList.filter((item) => {
       return item.toLowerCase().search(event.target.value.toLowerCase()) !== -1;
